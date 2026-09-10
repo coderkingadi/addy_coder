@@ -1,0 +1,45 @@
+'''
+GAME CONCEPT :-
+1. BUID A SIMPLE CLASS TO STORE/MEMORISED DATA LIKE:PLAYER NAME & SCORE
+2. WE CAN USE PYTHON INBUILT FUNCTION IMPORT WE IMORT RANDOM FUNCTION
+FOR USERS TO SELECT A RANDOM NUMBER TO PLAY
+3.  WE CREATE A FUNCTION WITH THE USE OF WHILE LOOP FOR INFINTE LOOP ITERATION
+FOR PLAYERS (UNTIL PLAYER AND COMPUTER SELECT A SAME NUMBER(OUT) OTHERWISE CODE NEVER ENDS) 
+'''
+# 1st INNING 
+import random
+
+class Player:
+    def __init__(self, name):
+        self.name = name
+        self.score = 0
+
+def play_inning(batsman):
+    print(f"\n {batsman.name} Starts Batting!")
+
+    while True:
+        # PLAYER KA INPUT(1-6)
+        user_choice = int(input("Hit your shot (1-6): "))
+        if user_choice < 1 or user_choice > 6 :
+            print("Invalid shot! Please enter a number between 1 to 6 only.\n")
+            continue
+        
+    #COMPUTER BOWLING (1-6);
+        computer_choice = random.randint(1,6)
+        print(f"Bowl Througing: {computer_choice}")
+
+# Checking Out Or Not 
+        if user_choice == computer_choice:
+            print(f"OUT!! {batsman.name} End of Batsman inning")            
+            print(f"Total Score:{batsman.score} Total runs\n")
+            break
+        else:
+            batsman.score += user_choice
+            print(f"Great Shot! Cureent Score: {batsman.score} ")  
+
+
+# END OF AN INNING 
+user = Player("You")
+play_inning(user)
+
+    
