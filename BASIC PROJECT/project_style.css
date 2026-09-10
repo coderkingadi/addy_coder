@@ -1,0 +1,66 @@
+/* *{
+    padding-right: 0px;
+    margin: 0px;
+}
+
+.scoreboard{
+    color: black;
+    background-color: grey;
+    
+    
+}
+
+h2{
+    color: blueviolet;
+    background-color: whitesmoke;
+    text-align: center;
+    /* display: inline-block; 
+}*/
+
+
+.players-deatils{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/*
+.battingside{
+    color: azure; 
+    /* display: inline-block; 
+    justify-content: space-between;
+h3{
+    color: brown;
+    /* background-color: brown; */
+    
+   
+/* } */
+/* p{
+    color: rgb(202, 202, 29);
+    
+}
+}
+
+.bowlingside{
+    color: antiquewhite;
+    text-align: end; */
+    /* display: inline-block; */
+    
+/* h3{
+    color: brown;
+
+}
+p{
+    color: rgb(202, 202, 29);
+    /* background-color: lightcyan;
+} */
+/* } 
+}  */
+
+
+.battingside , .bowlingside {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    width: 45%;
+}

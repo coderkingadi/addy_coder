@@ -1,0 +1,217 @@
+* {
+    margin: 0%;
+    padding: 0px;
+    background-color: black;
+
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.Hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 100px;
+    align-items: center;
+    gap: 20px;
+
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    opacity: 0;
+    animation: fadeUp 1s ease-out forwards;
+
+}
+
+span {
+    color: rgb(24, 142, 24);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    color: grey;
+    opacity: 0;
+    animation: fadeUp 1s ease-out 0.3s forwards;
+}
+
+#newanchor {
+    padding: 10px;
+    border-radius: 50px;
+    background-color: aqua;
+    opacity: 0;
+        animation: fadeUp 1s ease-out 0.6s forwards;
+}
+
+#newanchor:hover {
+    background-color: rgb(178, 156, 221);
+}
+
+.skill {
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: lightseagreen;
+    /* background-color: #ffffff; */
+    gap: 30px;
+    padding: 40px 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.box {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Projects Container Logic */
+.projects-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto;
+    /* Upar-neeche gap ke liye */
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 cards ka structure */
+    gap: 30px;
+}
+
+/* Individual Card Logic */
+.project-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    /* Soft shadow */
+    display: flex;
+    flex-direction: column;
+    /* Text aur button ko upar-neeche set karne ke liye */
+    transition: all 0.3s ease;
+    /* Hover animation smoothly aane ke liye */
+    color: lightseagreen;
+}
+
+/* Card Lift-up Hover Effect */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Image/Banner ki jagah ek color box */
+.card-image-placeholder {
+    width: 100%;
+    height: 150px;
+    background-color: #e9ecef;
+    /* Halka grey rang */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Action Button Style */
+.project-btn {
+    margin-top: auto;
+    /* Yeh button ko hamesha card ke bilkul neeche dhakel dega */
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #333333;
+    /* Classic dark button */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover */
+.project-btn:hover {
+    background-color: #555555;
+}
+
+footer{
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0 ;
+    gap: 40px;
+    text-align: center;
+   
+}
+
+#new_project{
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color:lightslategray;
+    color: aqua;
+    padding:10px;
+    border-radius:50px;
+    
+
+
+}
+
+#new_project:hover{
+    background-color: #fff;
+    color: aqua;
+
+}
+
+@media (max-width: 768px){
+    .skill , .projects-container{
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    footer{
+        padding: 30px 10px;
+    }
+
+}
+
+@keyframes fadeUp{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

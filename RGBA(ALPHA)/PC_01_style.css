@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+
+.BOX{
+    height: 60px;
+    background-color: #0f1111;
+    border :2px red solid;
+    
+}
+#logo{
+    color: orange;
+    font-size: 25px;
+}
+
+button {
+    background-color: #f08804;
+}
+
+a {
+    padding-right: 200px;
+    text-decoration: none;
+}
+
+.contentbox{
+    height: 100px;
+    width: 100px;
+    border: 2px solid burlywood;
+    display: inline-block;
+}
+.container{
+    height: 700px;
+
+}
+footer{
+    background-color: #0f1111;
+    color: white;
+    text-align: center;
+}
+
+
+/* div{
+    height: 100px;
+    width: 100px;
+    border: 15px solid violet;
+    padding: 20px;
+    margin: 15px;
+ } */
+
+/*
+#box1{
+    background-color: rgba(0,43,200,0.5);
+}
+
+#box2{
+    background-color: rgba(100,13,20,0.5);
+}
+
+#box3{
+    background-color: rgba(45,200,20,0.5);
+} */

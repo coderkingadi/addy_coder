@@ -1,0 +1,34 @@
+div{
+    height: 300px;
+    width: 300px;
+    background-color: cadetblue;
+    border: 2px black solid;
+
+}
+
+@media (max-width : 300px) {
+
+    div{
+
+        background-color: rgb(123, 123, 227);
+    }
+}
+@media (min-width : 300px) and (max-width : 400px) {
+
+    div{
+
+        background-color: rgb(205, 132, 144);
+    }
+}
+@media (min-width : 400px) and (max-width : 600px) {
+    div{
+        background-color: rgb(115, 12, 29);
+    }
+}
+@media (min-width : 600px) {
+
+    div{
+
+        background-color: rgb(116, 207, 152);
+    }
+}

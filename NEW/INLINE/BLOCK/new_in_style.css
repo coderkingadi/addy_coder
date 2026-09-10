@@ -1,0 +1,12 @@
+div{
+    height: 100px;
+    width: 100px;
+    margin : 25px;
+    padding :20px;
+    /* display: inline;  THE INLINE TAG WE CANT CHANGE HEIGHT WIDTH MARGIN PADDING */
+     display: inline-block; /*THE INLINEBLOCK IS SET THE HEIGHT WIDTH MARGIN TOP BOOTOM AND PADDING */
+}
+#BOX1{
+    /* display: none; CLEAR THE DATA AND DOESN'T SHOW ANY SPACE */
+      visibility: hidden;  /*DISPLAY THE SPACE BUT CONTENT DOESN'T SHOW */
+}

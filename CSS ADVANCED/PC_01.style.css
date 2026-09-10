@@ -1,0 +1,9 @@
+div{
+    height: 300px;
+    width: 300px;
+    background-image: url(/mount_photo.jpg.jpg);
+    background-size: cover;
+    position: fixed;
+    top: 10px;
+    right: 50px;
+}

@@ -1,0 +1,47 @@
+*{
+    
+    text-align: center;
+}
+div{
+    height: 100px;
+    width: 150px;
+    border: 3px solid black;
+    display: inline-block;
+    
+
+}
+#box{
+    height: 500px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    /* flex-direction: row-reverse;
+    flex-direction: column-reverse; */
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: center;
+    /* flex-wrap: wrap; SPACE BETWEEN CONTENT */
+    /* flex-wrap: wrap; PRINT IN REVERSE ORDER */
+    align-items: flex-start;
+}
+
+#box1{
+    background-color: blue;
+}
+#box2{
+    background-color: purple;
+    
+}
+#box3{
+    background-color: wheat;
+   
+}
+#box4{
+    background-color: goldenrod;
+}
+#box5{
+    background-color: greenyellow;
+}

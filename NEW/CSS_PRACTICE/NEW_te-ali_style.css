@@ -1,0 +1,29 @@
+body{
+    background-color: aquamarine;
+}
+p{
+    text-align: left;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 700;
+    background-color: slateblue;
+    
+}
+a{
+    text-decoration: none;
+}
+#heading1{
+    font-weight: normal;
+}
+#heading2{
+    font-weight : bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#heading3{
+    font-weight : bolder;
+}
+#heading4{
+    font-weight :lighter;
+}

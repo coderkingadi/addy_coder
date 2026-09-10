@@ -1,0 +1,33 @@
+*{
+    text-align: center;
+}
+#box{
+    width: 800px;
+    height: 300px;
+    display: flex;
+    /* flex-direction: row;   left - right */
+    /* flex-direction: row-reverse; right- left*/
+    /* flex-direction: column; up - down */
+    /* flex-direction: column-reverse; down - up */
+}
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+}
+#box1{
+    background-color: blue;
+}
+#box2{
+    background-color: purple;
+}
+#box3{
+    background-color: wheat;
+}
+#box4{
+    background-color: goldenrod;
+}
+#box5{
+    background-color: greenyellow;
+}
